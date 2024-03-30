@@ -1,0 +1,54 @@
+body {
+    height: 900px;
+    width: 1600px;
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1f2937;
+    color: aliceblue;
+}
+
+.qlw {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+}
+
+.options {
+    height: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 55px;
+    background-color: lavenderblush;
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+button {
+    height: 140px;
+    width: 280px;
+    font-size: 34px;
+}
+
+.footnote {
+    text-align: center;
+    font-size: 15px;
+    background-color: #1f2937;
+    color: aliceblue;
+    font-weight: 500;
+}
