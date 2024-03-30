@@ -1,6 +1,10 @@
+html {
+    position: relative;
+    height: 100%;
+}
+
 body {
-    height: 900px;
-    width: 1600px;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: lavender;
