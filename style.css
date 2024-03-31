@@ -1,3 +1,8 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+}
+
 html {
     position: relative;
     height: 100%;
@@ -67,10 +72,104 @@ span {
     border-radius: 50px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
 button {
     height: 140px;
     width: 280px;
-    font-size: 34px;
+    font-size: 2rem;
+    border-radius: 16px;
+    transition: ease-out 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: azure;
+    color: dodgerblue;
+    box-shadow: inset  0 0 0 0 cornflowerblue;
+}
+
+.btn-1:hover {
+    box-shadow: inset  280px 0 0 0 deepskyblue;
+    color: white;
+}
+
+.btn-2 {
+    background-color: azure;
+    color: lime;
+    box-shadow: inset  0 0 0 0 lawngreen;
+}
+
+.btn-2:hover {
+    box-shadow: inset  280px 0 0 0 limegreen;
+    color: white;
+}
+
+.btn-3 {
+    background-color: azure;
+    color:tomato;
+    box-shadow: inset  0 0 0 0 orangered;
+}
+
+.btn-3:hover {
+    box-shadow: inset  280px 0 0 0 rgb(243, 169, 58);
+    color: white;
+}
+
+.btn-4 {
+    background-color: azure;
+    color:crimson;
+    box-shadow: inset  0 0 0 0 red;
+}
+
+.btn-4:hover {
+    box-shadow: inset  280px 0 0 0 rgb(255, 94, 0);
+    color: white;
+}
+
+.btn-5 {
+    background-color: azure;
+    color:rgb(78, 78, 78);
+    box-shadow: inset  0 0 0 0 rgb(85, 85, 85);
+}
+
+.btn-5:hover {
+    box-shadow: inset  280px 0 0 0 darkgrey;
+    color: white;
+}
+
+.btn-6 {
+    background-color: azure;
+    color:rgb(187, 5, 41);
+    box-shadow: inset  0 0 0 0 red;
+}
+
+.btn-6:hover {
+    box-shadow: inset  280px 0 0 0 rgb(163, 1, 33);
+    color: white;
+}
+
+.btn-7 {
+    background-color: azure;
+    color:rgb(4, 116, 0);
+    box-shadow: inset  0 0 0 0 rgb(20, 100, 0);
+}
+
+.btn-7:hover {
+    box-shadow: inset  280px 0 0 0 rgb(17, 139, 1);
+    color: white;
+}
+
+.btn-8 {
+    background-color: azure;
+    color:rgb(209, 178, 0);
+    box-shadow: inset  0 0 0 0 rgb(238, 255, 0);
+}
+
+.btn-8:hover {
+    box-shadow: inset  280px 0 0 0 rgb(233, 233, 24);
+    color: white;
 }
 
 .footnote {
