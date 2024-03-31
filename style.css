@@ -27,6 +27,30 @@ body {
     font-weight: 550;
 }
 
+.marquee {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+    font-size: 30px
+    
+}
+
+span {
+    color: yellow;
+}
+
+@keyframes marquee {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(-100%, 0);}
+}
 .options {
     height: 100%;
     padding-left: 0;
@@ -62,8 +86,76 @@ button {
     align-self: center;
 }
 
-img {
-    height: 751px;
-    width: 986px;
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(2);}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.4);}
+    to {transform: scale(1);}
+}
+
+@-webkit-keyframes zoom-out {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+@keyframes zoom-out {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.4s;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+.out {
+    animation-name: zoom-out;
+    animation-duration: 0.4s;
+}
