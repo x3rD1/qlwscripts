@@ -274,15 +274,3 @@ button {
     animation-name: zoom-out;
     animation-duration: 0.4s;
 }
-
-.data {
-    display: none;
-}
-
-.g-signin2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50%;
-    margin-left: -50%;
-}
